@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navigation_left">
+        <p class="openWorkspaces">open workspaces</p>
+      </div>
+      <input type="text" class="searchInput" />
+      <div class="navigation_right"></div>
+    </div>
+    <div class="wrapper">
+      <div class="workspaces">
+        <div class="row">
+          <input type="text" class="workspaceName" />
+          <p class="addWorkspace">add</p>
+        </div>
+        <ul class="list"></ul>
+      </div>
+      <webview id="browser-window" src="https://www.github.com/"></webview>
+    </div>
+    <script src="scripts/searchInput.js"></script>
+    <script type="module" src="scripts/workspaces.js"></script>
+    <script type="module" src="scripts/addWorkspace.js"></script>
+  </body>
+</html>
